@@ -9,5 +9,12 @@ Personal portfolio.
 * [Parcel](https://parceljs.org/)
 * [ESLint with Airbnb's config](https://github.com/airbnb/javascript)
 
+## Background pictures
+
+* [NGC 1499: The California Nebula](https://apod.nasa.gov/apod/ap181106.html) by Bray Falls
+* [The Fairy of Eagle Nebula](https://apod.nasa.gov/apod/ap181202.html) by NASA
+* [Aurora Shimmer, Meteor Flash](https://apod.nasa.gov/apod/ap181209.html) by Bjørnar G. Hansen
+* [M43: Orion Falls](https://apod.nasa.gov/apod/ap181212.html) by Zhuoqun Wu
+
 ## Demo
-[zifi.kapsi.fi](http://zifi.kapsi.fi/)
+[zifi.kapsi.fi](https://zifi.kapsi.fi/)
