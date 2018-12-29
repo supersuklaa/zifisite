@@ -1,0 +1,93 @@
+:root {
+  --a-color: #aaa;
+  --bg-color: #000;
+  --bg-img: none;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  height: 100%;
+
+  background-image: var(--bg-img);
+  transition: .5s background-image;
+
+}
+
+#master-of-puppets {
+  height: 100%;
+  background-color: var(--bg-color);
+  transition: .5s background-color;
+  overflow: auto;
+}
+
+#satumaa-tango {
+  /* padding: 2em; */
+  font-size: 2.5em;
+  background-image: url('../images/shadow.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  height: 100%;
+  min-width: 654px;
+  position: fixed;
+}
+
+#satumaa-tango img.logo {
+  position: absolute;
+  top: 50%;
+  left: 108px;
+  transform: translateY(-50%);
+}
+
+#saturday-night {
+  float: left;
+  left: 700px;
+  position: relative;
+  max-width: 456px;
+  margin: 5em auto;
+}
+
+#saturday-night h2 {
+  letter-spacing: -.05em;
+  font-size: 2em;
+}
+
+#saturday-night h2 span {
+  color: var(--a-color);
+  transition: .5s color;
+}
+
+#saturday-night li span {
+  transition: .5s color;
+  font-size: .75em;
+}
+
+#saturday-night h3 {
+  letter-spacing: -.05em;
+  font-size: 1.4em;
+  margin: 1em auto .3em;
+}
+
+#saturday-night select {
+  margin: 1em;
+  font-size: .8em;
+  max-width: 10em;
+}
+
+#saturday-night ul,
+#saturday-night ol {
+  padding: 0;
+  margin: 0;
+}
+
+#saturday-night li {
+  margin: .4em 1.1em;
+}
