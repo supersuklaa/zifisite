@@ -3,20 +3,9 @@ import * as Vibrant from 'node-vibrant';
 const css = document.documentElement.style;
 
 export default {
-  setBg: (bg) => {
-    css.setProperty('--bg-img', `url('${bg}')`);
-    return { bg };
-  },
-
-  setBgColor: (bgColor) => {
-    css.setProperty('--bg-color', bgColor);
-    return { bgColor };
-  },
-
-  setAColor: (aColor) => {
-    css.setProperty('--a-color', aColor);
-    return { aColor };
-  },
+  setBg: bg => ({ bg }),
+  setBgColor: bgColor => ({ bgColor }),
+  setAColor: aColor => ({ aColor }),
 
   setPalette: bg => (state, actions) => Vibrant.from(bg).getPalette((err, palette) => {
     if (err) {
@@ -42,7 +31,18 @@ export default {
       aColor = palette.LightVibrant.getHex();
     }
 
+    css.setProperty('--bg-img', `url('${bg}')`);
+    css.setProperty('--bg-color', bgColor);
+    css.setProperty('--a-color', aColor);
+
     actions.setAColor(aColor);
     actions.setBgColor(bgColor);
   }),
+
+  upload: e => (state, actions) => {
+    if (e.srcElement.files) {
+      const src = URL.createObjectURL(e.srcElement.files[0]);
+      actions.setPalette(src);
+    }
+  },
 };

@@ -1,8 +1,13 @@
 import { h } from 'hyperapp';
 
+import GitHub from './github-logo';
+
 export default () => (
   <div>
-    <h2>hyper<span>sudoku</span></h2>
+    <h2>
+      hyper<span>sudoku</span>
+      <GitHub a={'https://github.com/supersuklaa/hyper-sudoku'} />
+    </h2>
     Very basic sudoku single page application.
     <h3>
       cool things

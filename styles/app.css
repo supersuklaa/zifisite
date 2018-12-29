@@ -17,8 +17,22 @@ body {
   height: 100%;
 
   background-image: var(--bg-img);
-  transition: .5s background-image;
+  transition: .25s background-image;
 
+}
+
+a {
+  color: #fff;
+}
+
+svg path {
+  fill: #fff;
+}
+
+svg.gh-logo {
+  margin: 0 .3em;
+  height: .7em;
+  width: .7em;
 }
 
 #master-of-puppets {
@@ -29,7 +43,6 @@ body {
 }
 
 #satumaa-tango {
-  /* padding: 2em; */
   font-size: 2.5em;
   background-image: url('../images/shadow.png');
   background-repeat: no-repeat;
@@ -58,6 +71,7 @@ body {
 #saturday-night h2 {
   letter-spacing: -.05em;
   font-size: 2em;
+  margin: 0 0 .75em 0;
 }
 
 #saturday-night h2 span {
@@ -76,18 +90,37 @@ body {
   margin: 1em auto .3em;
 }
 
+#saturday-night input,
 #saturday-night select {
   margin: 1em;
-  font-size: .8em;
+  font-size: .7em;
+}
+
+#saturday-night select {
   max-width: 10em;
 }
 
-#saturday-night ul,
+#saturday-night ul {
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
 #saturday-night ol {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 .4em;
+}
+
+#saturday-night ol > li {
+  margin: 1em;
 }
 
 #saturday-night li {
-  margin: .4em 1.1em;
+  margin: .4em 1.5em;
+}
+
+#saturday-night hr {
+  border: none;
+  background: var(--a-color);
+  height: 3px;
+  margin: 2.75em 0;
 }

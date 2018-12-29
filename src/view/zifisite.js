@@ -5,7 +5,7 @@ const BgColorBlock = () => ({ bgColor }) => {
 
   return (
     <li>
-      bg-color: <span style={style}>{bgColor}</span>
+      background color: <span style={style}>{bgColor}</span>
     </li>
   );
 };
@@ -15,12 +15,12 @@ const AColorBlock = () => ({ aColor }) => {
 
   return (
     <li>
-      text-hilight-color: <span style={style}>{aColor}</span>
+      highlight color: <span style={style}>{aColor}</span>
     </li>
   );
 };
 
-export default () => ({ bgs }, { setBg }) => (
+export default () => ({ bgs }, { setPalette, upload }) => (
   <div>
     <h2>zifi<span>site</span></h2>
     This site you are visiting right now.
@@ -30,11 +30,19 @@ export default () => ({ bgs }, { setBg }) => (
     <ol>
       <li>
         You can change the background:
-        <select onchange={e => setBg(bgs[e.srcElement.selectedIndex])}>
+        <select onchange={e => setPalette(bgs[e.srcElement.selectedIndex])}>
           {bgs.map(img => (
             <option>{img}</option>
           ))}
         </select>
+      </li>
+      <li>
+        You can actually change the background:
+        <ul>
+          <li>be careful with big files</li>
+          <li>files are not saved anywhere</li>
+        </ul>
+        <input type='file' accept='image/*' onchange={e => upload(e)} />
       </li>
       <li>
         Site (or your device tbh) calculates colors from the background:
