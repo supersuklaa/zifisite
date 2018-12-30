@@ -6,7 +6,7 @@ export default () => (
   <div>
     <h2>
       hyper<span>cal</span>
-      <GitHub a={'https://github.com/supersuklaa/hyper-cal'} />
+      <GitHub a='https://github.com/supersuklaa/hyper-cal' />
     </h2>
     Very basic calendar single page application.
     <h3>

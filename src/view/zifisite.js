@@ -1,5 +1,7 @@
 import { h } from 'hyperapp';
 
+import GitHub from './github-logo';
+
 const BgColorBlock = () => ({ bgColor }) => {
   const style = { background: bgColor };
 
@@ -22,7 +24,10 @@ const AColorBlock = () => ({ aColor }) => {
 
 export default () => ({ bgs }, { setPalette, upload }) => (
   <div>
-    <h2>zifi<span>site</span></h2>
+    <h2>
+      zifi<span>site</span>
+      <GitHub a='https://github.com/supersuklaa/zifisite' />
+    </h2>
     This site you are visiting right now.
     <h3>
       cool things

@@ -6,7 +6,7 @@ export default () => (
   <div>
     <h2>
       hyper<span>sudoku</span>
-      <GitHub a={'https://github.com/supersuklaa/hyper-sudoku'} />
+      <GitHub a='https://github.com/supersuklaa/hyper-sudoku' />
     </h2>
     Very basic sudoku single page application.
     <h3>

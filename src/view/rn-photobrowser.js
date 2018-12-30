@@ -7,7 +7,7 @@ export default () => (
     <h2>
       react<span>native</span><br />
       photo<span>browser</span>
-      <GitHub a={'https://github.com/supersuklaa/react-native-photobrowser'} />
+      <GitHub a='https://github.com/supersuklaa/react-native-photobrowser' />
     </h2>
     Mainly a by-product of a React Native exercise.
     <h3>

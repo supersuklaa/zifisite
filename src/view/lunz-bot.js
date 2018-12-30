@@ -6,7 +6,7 @@ export default () => (
   <div>
     <h2>
       lunz<span>bot</span>
-      <GitHub a={'https://github.com/supersuklaa/lunz-bot'} />
+      <GitHub a='https://github.com/supersuklaa/lunz-bot' />
     </h2>
     Telegram bot that searches lunches.
     <h3>

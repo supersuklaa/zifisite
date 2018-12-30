@@ -6,7 +6,7 @@ export default () => (
   <div>
     <h2>
       expl<span>annual</span>
-      <GitHub a={'https://github.com/supersuklaa/expl-annual'} />
+      <GitHub a='https://github.com/supersuklaa/expl-annual' />
     </h2>
     Data visualization
     of <a target='_blank' href='https://github.com/majori/expl-bot'>expl-bot</a>'s
