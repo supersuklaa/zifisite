@@ -1,7 +1,6 @@
 :root {
   --a-color: #aaa;
   --bg-color: #000;
-  --bg-img: none;
   height: 100%;
 }
 
@@ -16,7 +15,7 @@ body {
   font-size: 1.25em;
   height: 100%;
 
-  background-image: var(--bg-img);
+  background-image: none;
   transition: .25s background-image;
 
 }
@@ -25,11 +24,7 @@ a {
   color: #fff;
 }
 
-svg path {
-  fill: #fff;
-}
-
-svg.gh-logo {
+img.gh-logo {
   margin: 0 .3em;
   height: .7em;
   width: .7em;
@@ -49,20 +44,22 @@ svg.gh-logo {
   background-position-x: right;
   background-position-y: center;
   height: 100%;
-  min-width: 654px;
+  min-width: 555px;
   position: fixed;
 }
 
 #satumaa-tango img.logo {
   position: absolute;
   top: 50%;
-  left: 108px;
+  left: 68px;
   transform: translateY(-50%);
+  width: 357px;
+  max-width: 90%;
 }
 
 #saturday-night {
   float: left;
-  left: 700px;
+  left: 580px;
   position: relative;
   max-width: 456px;
   margin: 5em auto;

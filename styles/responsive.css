@@ -1,0 +1,83 @@
+/* RESPONSIVE */
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  #satumaa-tango {
+    background-image: none;
+    height: auto;
+    min-width: 0;
+    position: relative;
+    margin: 0 auto;
+    max-width: 456px;
+    padding: 3em 9px;
+  }
+
+  #satumaa-tango img.logo {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+
+  #saturday-night {
+    float: none;
+    left: auto;
+    padding: 0 9px;
+    margin: 2em auto;
+  }
+
+  #saturday-night input {
+    max-width: 200px;
+  }
+ 
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+ 
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  body {
+    font-size: 1.1em;
+    background-size: auto 100%;
+    background-position: center;
+  }
+  #master-of-puppets {
+    height: auto;
+    overflow: initial;
+  }
+  #satumaa-tango {
+    text-align: center;
+  }
+
+  #satumaa-tango img.logo {
+    max-width: 75%;
+  }
+  #saturday-night  {
+    text-align: center;
+    margin: 2em auto;
+    padding-bottom: 3em;
+  }
+  #saturday-night li {
+    list-style-position: inside;
+    margin: .1em 0;
+  }
+  img.gh-logo {
+    margin: .3em auto 0;
+    display: block;
+  }
+  
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 355px) {
+
+}

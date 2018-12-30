@@ -1,6 +1,6 @@
 import { h } from 'hyperapp';
 
-import logo from '../../images/logo.png';
+import logo from '../../images/zifi.svg';
 
 import ZifiBlock from './zifisite';
 import SudokuBlock from './hyper-sudoku';

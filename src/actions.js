@@ -1,7 +1,5 @@
 import * as Vibrant from 'node-vibrant';
 
-const css = document.documentElement.style;
-
 export default {
   setBg: bg => ({ bg }),
   setBgColor: bgColor => ({ bgColor }),
@@ -21,6 +19,7 @@ export default {
     if (palette.DarkVibrant) {
       const rgba = palette.DarkVibrant
         .getRgb()
+        .map(i => Math.round(i))
         .concat([opacity])
         .join(', ');
 
@@ -29,11 +28,13 @@ export default {
 
     if (palette.LightVibrant) {
       aColor = palette.LightVibrant.getHex();
+    } else if (palette.LightMuted) {
+      aColor = palette.LightMuted.getHex();
     }
 
-    css.setProperty('--bg-img', `url('${bg}')`);
-    css.setProperty('--bg-color', bgColor);
-    css.setProperty('--a-color', aColor);
+    document.body.style.backgroundImage = `url('${bg}')`;
+    document.documentElement.style.setProperty('--bg-color', bgColor);
+    document.documentElement.style.setProperty('--a-color', aColor);
 
     actions.setAColor(aColor);
     actions.setBgColor(bgColor);
