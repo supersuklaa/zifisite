@@ -40,6 +40,12 @@ export default () => ({ bgs }, { setPalette, upload }) => (
             <option>{img}</option>
           ))}
         </select>
+        <ul>
+          <li>
+            Check photo
+            credits <a href='https://github.com/supersuklaa/zifisite' target='_blank'>here</a>.
+          </li>
+        </ul>
       </li>
       <li>
         You can actually change the background:
